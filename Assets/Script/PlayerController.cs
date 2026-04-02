@@ -24,7 +24,7 @@ public class PlayerController : MonoBehaviour
     {
         Move = Input.GetAxis("Horizontal");
 
-        rb.velocity = new Vector2(Move * speed, rb.velocity.y);
+        rb.linearVelocity = new Vector2(Move * speed, rb.linearVelocity.y);
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
